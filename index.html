@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="game">
+    <div id="result"></div>
+    
+
+    <label for="player1">Player1:</label>
+    <input type="text" id="player1" name="player1">
+    <br>
+    <label for="player2">Player2:</label>
+    <input type="text" id="player2" name="player2">
+    <br><br>
+    <div id="board">
+        <div class="colOne">
+            <div class="row one"></div>
+            <div class="row two"></div>
+            <div class="row three"></div>
+        </div>
+        <div class="colTwo">
+            <div class="row four"></div>
+            <div class="row five"></div>
+            <div class="row six"></div>
+        </div>
+        <div class="colThree">
+            <div class="row seven"></div>
+            <div class="row eight"></div>
+            <div class="row nine"></div>
+        </div>
+    </div>
+    <br><br>
+
+    <button id="new" class="btn" onclick="tabulation.play(); this.disabled=true;">Start</button>
+    <br>
+    <button id="restart" class="btn" onclick="tabulation.clear()">Restart</button>
+    </div>
+</body>
+</html>
